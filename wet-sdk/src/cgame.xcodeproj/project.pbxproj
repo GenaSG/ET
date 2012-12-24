@@ -249,10 +249,16 @@
 		508817C409F0C9740071BF1A /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "cgame" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 508817C209F0C9740071BF1A;
 			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				508817D309F0C9AD0071BF1A /* cgame */,
 			);
@@ -368,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = cgame_mac;
+				SDKROOT = macosx10.8;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
 			};
 			name = Development;
@@ -375,7 +382,10 @@
 		508817D909F0C9AE0071BF1A /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				PRODUCT_NAME = cgame_mac;
+				SDKROOT = macosx10.8;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
