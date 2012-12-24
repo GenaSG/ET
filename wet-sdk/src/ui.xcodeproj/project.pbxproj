@@ -132,10 +132,16 @@
 		508817C409F0C9740071BF1A /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "ui" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 508817C209F0C9740071BF1A;
 			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				508817D309F0C9AD0071BF1A /* ui */,
 			);
@@ -179,22 +185,22 @@
 		508817C609F0C9740071BF1A /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					UIDLL,
 					_DEBUG,
 				);
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.8;
 			};
 			name = Development;
 		};
 		508817C709F0C9740071BF1A /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -204,7 +210,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.8;
 			};
 			name = Deployment;
 		};
