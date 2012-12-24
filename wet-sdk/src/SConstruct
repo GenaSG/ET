@@ -140,10 +140,10 @@ def gcc_is_mingw():
 
 if gcc_is_mingw():
 	g_os = 'win32'
-elif cpu == 'ppc':
+elif cpu == 'x86':
 	g_os = 'Darwin'
 else:
-	g_os = 'Darwin'
+	g_os = 'Linux'
 print 'os: %s' % g_os
 
 # end arch detection -----------------------------
