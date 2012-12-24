@@ -5,10 +5,10 @@ if [ "$#" != "1" ] ; then
   exit
 fi
 
-SO="${1%.mp.ppc.so}"
+SO="${1%.mp.i386.so}"
 
-if [ ! -f ${SO}.mp.ppc.so ] ; then
-  echo "Missing ${SO}.mp.ppc.so"
+if [ ! -f ${SO}.mp.i386.so ] ; then
+  echo "Missing ${SO}.mp.i386.so"
   exit
 fi
 
@@ -19,7 +19,7 @@ rm -rf ${SO}_mac.bundle
 mkdir ${SO}_mac.bundle
 mkdir ${SO}_mac.bundle/Contents
 mkdir ${SO}_mac.bundle/Contents/MacOS
-cp ../${SO}.mp.ppc.so ${SO}_mac.bundle/Contents/MacOS/${SO}_mac
+cp ../${SO}.mp.i386.so ${SO}_mac.bundle/Contents/MacOS/${SO}_mac
 
 cat << EOF > ${SO}_mac.bundle/Contents/Info.plist
 <?xml version="1.0" encoding="UTF-8"?>

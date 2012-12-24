@@ -143,7 +143,7 @@ if gcc_is_mingw():
 elif cpu == 'ppc':
 	g_os = 'Darwin'
 else:
-	g_os = 'Linux'
+	g_os = 'Darwin'
 print 'os: %s' % g_os
 
 # end arch detection -----------------------------
@@ -236,7 +236,7 @@ OPTCPPFLAGS = [ ]
 
 if ( OS == 'Darwin' ):
 	# taken from xcode's default project settings
-	BASECPPFLAGS += [ '-D__MACOS__', '-Wno-long-double', '-arch', 'ppc', '-fasm-blocks', '-fpascal-strings', '-faltivec', '-mcpu=G4', '-mtune=G4', '-Wno-unknown-pragmas' ]
+	BASECPPFLAGS += [ '-D__MACOS__', '-arch', 'x86_64', '-fasm-blocks', '-fpascal-strings', '-faltivec', '-Wno-unknown-pragmas' ]
 
 BASECPPFLAGS.append( '-pipe' )
 # warn all
